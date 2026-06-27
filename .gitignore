@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+src/lexicons
+lexicons
+
+# Build outputs
+dist/
+build/
+*.js
+*.d.ts
+!src/**/*.d.ts
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-workspace
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+.tmp/
+temp/
