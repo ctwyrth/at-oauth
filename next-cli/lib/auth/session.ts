@@ -3,18 +3,18 @@ import { getOAuthClient } from "./client";
 import type { OAuthSession } from "@atproto/oauth-client-node";
 
 export async function getSession(): Promise<OAuthSession | null> {
-  const did = await getDid();
-  if (!did) return null;
+   const did = await getDid();
+   if (!did) return null;
 
-  try{
-    const client = await getOAuthClient();
-    return await client.restore(did);
-  } catch {
-    return null;
-  }
+   try{
+      const client = await getOAuthClient();
+      return await client.restore(did);
+   } catch {
+      return null;
+   }
 }
 
 export async function getDid(): Promise<string | null> {
-  const cookieStore = await cookies();
-  return cookieStore.get("did")?.value ?? null;
+   const cookieStore = await cookies();
+   return cookieStore.get("did")?.value ?? null;
 }
