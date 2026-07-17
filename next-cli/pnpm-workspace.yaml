@@ -1,4 +1,8 @@
 allowBuilds:
+  better-sqlite3: true
   core-js: true
+  esbuild: true
   sharp: true
   unrs-resolver: true
+onlyBuiltDependencies:
+  - better-sqlite3

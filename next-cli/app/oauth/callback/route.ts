@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getOAuthClient } from "@/lib/auth/client";
 
-const PUBLIC_URL = process.env.PUBLIC_URL || "http://127.0.0.1:3001";
+const PUBLIC_URL = process.env.PUBLIC_URL || "http://127.0.0.1:3000";
 
 export async function GET(request: NextRequest) {
    try {
